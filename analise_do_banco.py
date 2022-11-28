@@ -9,6 +9,9 @@ tabela = pd.read_sql('SELECT * FROM Clientes', conn)
 display(tabela.info())
 conn.close()
 
+def altereiMeuCodigo():
+    return True
+
 def gerar_grafico_histograma(coluna, tabela):
     grafico_histograma = px.histogram(tabela, x=coluna, color='Categoria')
     grafico_histograma.show()
